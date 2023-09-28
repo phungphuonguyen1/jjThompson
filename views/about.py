@@ -71,7 +71,7 @@ def load_view():
                 ax.scatter(x, y, color='white')
                 ax.set_title(f'Frame {frame}/{len(df)}')
 
-            ani = FuncAnimation(plt.gcf(), update, frames=len(df), repeat=False)
+            ani = FuncAnimation(fig, update, frames=len(df), repeat=False)
             st.pyplot(plt)
 
             #ax.plot(df['x'],df['y'],"r")
