@@ -77,13 +77,13 @@ def load_view():
         #note
         ax.text(-0.1,(input[1]/2)*1.3,'E={} V/m,$x_1$={}m,\n$x_2$={}m,$v_0={}m/s$'.format(E_field,x1,x2,vx),fontsize = 12, bbox = dict(facecolor = 'lightblue', alpha = 0.5))
         ax.set_title("Simulation")
-        #ax.axis("off")
+        ax.axis("off")
 
         #facilities
         ax.hlines(y=D/2, xmin=0, xmax=x1, linewidth=4, color='black')
         ax.hlines(y=-D/2, xmin=0, xmax=x1, linewidth=4, color='black')
 
-        ax.vlines(x=x1+x2, ymin=-D/2, ymax=1.5*max((y1+y2),D), linewidth=3, color='black')
+        ax.vlines(x=x1+x2, ymin=-D/2, ymax=1.5*max((y1+y2),D/2), linewidth=3, color='black')
         ax.hlines(y=0, xmin=0, xmax=x1+x2, linestyles='dotted',color='black')
 
         #distance note
