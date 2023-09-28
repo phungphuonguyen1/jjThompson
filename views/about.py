@@ -132,7 +132,8 @@ def load_view():
                 | **$y_2$** | {} |
             """.format(E_field,B_field,voltage,D,x1,x2,vx,y1,y2))
             st.markdown("**e/m: {} C/kg**".format(ratio))
-            st.latex('$dfrac{'e'}{'m'}$: {}'.format(ratio))
+            st.latex('$\\frac{{e}}{{m}}$: {}'.format(ratio))
+
 
 
 
