@@ -100,13 +100,13 @@ def load_view():
             ax.plot((0,x1),(-1.3*D/2,-1.3*D/2), 'gray',) # arrow line
             ax.plot((0,0),(-1.3*D/2,-1.3*D/2), 'gray', marker='<',) # lower arrowhead
             ax.plot((x1,x1),(-1.3*D/2,-1.3*D/2), 'gray', marker='>',) # upper arrowhead
-            ax.text(x1/2.5,-1.5*D/2,"x1={}".format(x1))
+            ax.text(x1/2.5,-1.5*D/2,"$x_1$={}".format(x1))
 
             #x2
             ax.plot((x1,x2+x1),(-1.3*D/2,-1.3*D/2), 'gray',) # arrow line
             ax.plot((x1,x1),(-1.3*D/2,-1.3*D/2), 'gray', marker='<',) # lower arrowhead
             ax.plot((x2+x1,x2+x1),(-1.3*D/2,-1.3*D/2), 'gray', marker='>',) # upper arrowhead
-            ax.text(x1+x2/2.5,-1.5*D/2,"x2={}".format(x2))
+            ax.text(x1+x2/2.5,-1.5*D/2,"$x_2$={}".format(x2))
 
             #D
             ax.plot((-0.1,-0.1),(-D/2,D/2), 'gray',) # arrow line
