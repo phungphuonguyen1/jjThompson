@@ -43,70 +43,78 @@ def load_view():
             <li>Length of polymer chain: in nanometer</li>
             <li>Distance: range should be small (less than length of polymer chain)</li>
         </ul>"""
-
-
+            
     with st.expander("Input explaination"):
         st.markdown(ls1,unsafe_allow_html=True)
 
-    input = user_input_features()
+    col1,col2= st.columns([1,2])
+    with col1: 
+        input = user_input_features()
+    with col2:
+        st.markdown("## Hình vẽ mô phỏng thí nghiệm thực tế")
+        st.video("https://youtu.be/fF_0zqYc24k",start_time=2)
 
-    if st.button("Mô phỏng"):
-        #ax.style.use('dark_background')
-        df=path_function(input[0],input[1],input[2],input[3],input[4])
-        #path
-        st.write(df)
-        fig,ax=plt.subplots()
-        ax.plot(df['x'],df['y'],"r")
-        voltage=input[0]
-        E_field=input[0]/input[1]
+    col3,col4=st.columns([2,1]):
+    if col1.button("Mô phỏng"):
+        with col3:
+            #ax.style.use('dark_background')
+            df=path_function(input[0],input[1],input[2],input[3],input[4])
+            #path
+            st.write(df)
+            fig,ax=plt.subplots()
+            ax.plot(df['x'],df['y'],"r")
+            voltage=input[0]
+            E_field=input[0]/input[1]
 
-        vx= E_field/input[4]
-        ELECTRON_CHARGE= 1.6e-19
-        ELECTRON_MASS = 9.1e-31
-        # Calculate other factors
-        ratio =ELECTRON_CHARGE/ELECTRON_MASS
-        D=input[1]
-        x1=input[2]
-        x2=input[3]
-        B_field=input[4]
-        t1_final=x1/vx
-        t2_final=x2/vx
-        y1=y1_inside(vx,ratio,E_field,B_field,t1_final,voltage,D)
-        y2=y2_outside(ratio,t2_final,x1,B_field,t1_final,E_field,voltage)
+            vx= E_field/input[4]
+            ELECTRON_CHARGE= 1.6e-19
+            ELECTRON_MASS = 9.1e-31
+            # Calculate other factors
+            ratio =ELECTRON_CHARGE/ELECTRON_MASS
+            D=input[1]
+            x1=input[2]
+            x2=input[3]
+            B_field=input[4]
+            t1_final=x1/vx
+            t2_final=x2/vx
+            y1=y1_inside(vx,ratio,E_field,B_field,t1_final,voltage,D)
+            y2=y2_outside(ratio,t2_final,x1,B_field,t1_final,E_field,voltage)
 
-        #note
-        ax.text(-0.1,(input[1]/2)*1.3,'E={} V/m,$x_1$={}m,\n$x_2$={}m,$v_0={}m/s$'.format(E_field,x1,x2,vx),fontsize = 12, bbox = dict(facecolor = 'lightblue', alpha = 0.5))
-        ax.set_title("Simulation")
-        ax.axis("off")
+            #note
+            ax.text(-0.1,(input[1]/2)*1.3,'E={} V/m,$x_1$={}m,\n$x_2$={}m,$v_0={}m/s$'.format(E_field,x1,x2,vx),fontsize = 12, bbox = dict(facecolor = 'lightblue', alpha = 0.5))
+            #ax.set_title("Simulation")
+            ax.axis("off")
 
-        #facilities
-        ax.hlines(y=D/2, xmin=0, xmax=x1, linewidth=4, color='black')
-        ax.hlines(y=-D/2, xmin=0, xmax=x1, linewidth=4, color='black')
+            #facilities
+            ax.hlines(y=D/2, xmin=0, xmax=x1, linewidth=4, color='black')
+            ax.hlines(y=-D/2, xmin=0, xmax=x1, linewidth=4, color='black')
 
-        ax.vlines(x=x1+x2, ymin=-D/2, ymax=1.5*max((y1+y2),D/2), linewidth=3, color='black')
-        ax.hlines(y=0, xmin=0, xmax=x1+x2, linestyles='dotted',color='black')
+            ax.vlines(x=x1+x2, ymin=-D/2, ymax=1.5*max((y1+y2),D/2), linewidth=3, color='black')
+            ax.hlines(y=0, xmin=0, xmax=x1+x2, linestyles='dotted',color='black')
 
-        #distance note
-        # x1
-        ax.plot((0,x1),(-1.3*D/2,-1.3*D/2), 'gray',) # arrow line
-        ax.plot((0,0),(-1.3*D/2,-1.3*D/2), 'gray', marker='<',) # lower arrowhead
-        ax.plot((x1,x1),(-1.3*D/2,-1.3*D/2), 'gray', marker='>',) # upper arrowhead
-        ax.text(x1/2.5,-1.5*D/2,"x1={}".format(x1))
+            #distance note
+            # x1
+            ax.plot((0,x1),(-1.3*D/2,-1.3*D/2), 'gray',) # arrow line
+            ax.plot((0,0),(-1.3*D/2,-1.3*D/2), 'gray', marker='<',) # lower arrowhead
+            ax.plot((x1,x1),(-1.3*D/2,-1.3*D/2), 'gray', marker='>',) # upper arrowhead
+            ax.text(x1/2.5,-1.5*D/2,"x1={}".format(x1))
 
-        #x2
-        ax.plot((x1,x2+x1),(-1.3*D/2,-1.3*D/2), 'gray',) # arrow line
-        ax.plot((x1,x1),(-1.3*D/2,-1.3*D/2), 'gray', marker='<',) # lower arrowhead
-        ax.plot((x2+x1,x2+x1),(-1.3*D/2,-1.3*D/2), 'gray', marker='>',) # upper arrowhead
-        ax.text(x1+x2/2.5,-1.5*D/2,"x2={}".format(x2))
+            #x2
+            ax.plot((x1,x2+x1),(-1.3*D/2,-1.3*D/2), 'gray',) # arrow line
+            ax.plot((x1,x1),(-1.3*D/2,-1.3*D/2), 'gray', marker='<',) # lower arrowhead
+            ax.plot((x2+x1,x2+x1),(-1.3*D/2,-1.3*D/2), 'gray', marker='>',) # upper arrowhead
+            ax.text(x1+x2/2.5,-1.5*D/2,"x2={}".format(x2))
 
-        #D
-        ax.plot((-0.1,-0.1),(-D/2,D/2), 'gray',) # arrow line
-        ax.plot((-0.1,-0.1),(-D/2,-D/2), 'gray', marker='v',) # lower arrowhead
-        ax.plot((-0.1,-0.1),(D/2,D/2), 'gray', marker='^',) # upper arrowhead
-        ax.text(-0.15,-D/10,"D={}".format(D),rotation=90)
+            #D
+            ax.plot((-0.1,-0.1),(-D/2,D/2), 'gray',) # arrow line
+            ax.plot((-0.1,-0.1),(-D/2,-D/2), 'gray', marker='v',) # lower arrowhead
+            ax.plot((-0.1,-0.1),(D/2,D/2), 'gray', marker='^',) # upper arrowhead
+            ax.text(-0.15,-D/10,"D={}".format(D),rotation=90)
 
-        # Display the plot in Streamlit
-        st.pyplot(fig)
+            # Display the plot in Streamlit
+            st.pyplot(fig)
+        with col4:
+            st.write(pd.DataFrame({'data':[E_field,x1,x2,D,voltage]}))
 
 
     
