@@ -58,6 +58,7 @@ def load_view():
     with col1: 
         input = user_input_features()
     with col2:
+        st.image("Specific-Charge-Ratio-03.png")
         st.markdown("## Hình vẽ mô phỏng thí nghiệm thực tế")
         st.video('https://youtu.be/fF_0zqYc24k',format='video')
         youtube_url = "https://youtu.be/fF_0zqYc24k"
