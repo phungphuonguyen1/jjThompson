@@ -121,18 +121,18 @@ def load_view():
             st.markdown("""
                 |       | Giá trị |
                 | ----------- | ----------- |
-                | **Electric field**    | {}  $\dfrac{'V'}{'m'}$|
+                | **Electric field**    | {}  '$\dfrac{V}{m}$'|
                 | **Magnetic field**   | {} $Tesla$|
                 | **Voltage** | {} $V$|
                 | **Distance** | {} $m$|
                 | **$x_1$**| {} $m$|
                 | **$x_2$**' | {} $m$|
-                | **$v_x$** | {} $\dfrac{m}{s}$|
+                | **$v_x$** | {} '$\dfrac{m}{s}$'|
                 | **$y_1$** | {}  $m$|
                 | **$y_2$** | {} $m$|
             """.format(E_field,B_field,voltage,D,x1,x2,vx,y1,y2))
             #st.markdown("**e/m: {} C/kg**".format(ratio))
-            st.markdown('**$\dfrac{e}{m}$**'+'**= {}**'.format(ratio))
+            st.markdown('$\dfrac{e}{m}$'+'= {}'.format(ratio))
 
 
 
