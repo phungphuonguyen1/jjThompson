@@ -13,8 +13,8 @@ def y1_inside(v_0x,radi,e,bfi,t1,v_ini,d):
     return y
 
 # outside Electric_field
-def y2_outside(radi,t2,x1,bfield,t1_fi,e):
-  if radi*(x1*bfield)**2>=V:
+def y2_outside(radi,t2,x1,bfield,t1_fi,e,v_ini):
+  if radi*(x1*bfield)**2>=v_ini:
     return 0
   else:
     vy_final_inside= radi*e*t1_fi
@@ -36,7 +36,7 @@ def path_function(voltage,distance,x_1,x_2,b):
     t2_final=x_2/vx
     #calculate y1, y2
     y1=y1_inside(vx,ratio,E_field,b,t1_final,voltage,distance)
-    y2=y2_outside(ratio,t2_final,x_1,b,t1_final,E_field)
+    y2=y2_outside(ratio,t2_final,x_1,b,t1_final,E_field,voltage)
 
     x_array=[]
     y_array=[]
@@ -55,8 +55,8 @@ def path_function(voltage,distance,x_1,x_2,b):
         if(y2==0):
           break
         else:
-          x_array.append(x_1+x2_outside(time))
-          y_array.append(y1+y2_outside(time))
+          x_array.append(x_1+x2_outside(vx,time))
+          y_array.append(y1+y2_outside(ratio,time,x_1,b,t1_final,E_field,voltage))
     df = pd.DataFrame({'x': x_array, 'y': y_array})
 
     #path
