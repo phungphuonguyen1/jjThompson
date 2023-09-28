@@ -3,10 +3,10 @@ from def_file import *
 def user_input_features():
     Voltage=st.slider('Voltage: ',0.0,10.0, 3.0)
     Distance=st.slider('Distance: ',0.01,0.1, 0.05,step=0.01)
-    B_field=st.slider('10^6*B_field: ',1.0,10.0,step=0.1)
+    B_field=st.slider('10^5*B_field: ',0.5,10.0,step=0.1)
     X1=st.slider('x1: ',0.1,1.0,0.2,step=0.01)
     X2=st.slider('x2: ',0.1,1.0,0.2,step=0.01)
-    features=[float(Voltage),float(Distance),float(X1),float(X2),float(B_field/10**6)]
+    features=[float(Voltage),float(Distance),float(X1),float(X2),float(B_field/10**5)]
     return features
 
 def load_view():    
@@ -83,7 +83,7 @@ def load_view():
         ax.hlines(y=D/2, xmin=0, xmax=x1, linewidth=4, color='black')
         ax.hlines(y=-D/2, xmin=0, xmax=x1, linewidth=4, color='black')
 
-        ax.vlines(x=x1+x2, ymin=-D/2, ymax=1.5*(y1+y2), linewidth=3, color='black')
+        ax.vlines(x=x1+x2, ymin=-D/2, ymax=1.5*max((y1+y2),D), linewidth=3, color='black')
         ax.hlines(y=0, xmin=0, xmax=x1+x2, linestyles='dotted',color='black')
 
         #distance note
