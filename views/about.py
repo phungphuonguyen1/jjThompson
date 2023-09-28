@@ -1,5 +1,6 @@
 import streamlit as st
 from def_file import *
+from matplotlib.animation import FuncAnimation
 def user_input_features():
     Voltage=st.slider('Voltage: ',0.0,10.0, 3.0)
     Distance=st.slider('Distance: ',0.01,0.1, 0.05,step=0.01)
@@ -57,15 +58,20 @@ def load_view():
     col3,col4=st.columns([2,1])
     if col1.button("Mô phỏng"):
         with col3:
-            #ax.style.use('dark_background')
-            df=path_function(input[0],input[1],input[2],input[3],input[4])
-            #path
-            #st.write(df)
-            fig,ax=plt.subplots()
-            for x, y in zip(df['x'], df['y']):
-                ax.scatter(x, y)  # Plot the point
-                plt.pause(0.5)      # Pause for 1 second (adjust as needed)
-                plt.draw()        # Update the plot
+            ax = plt.gca()
+            ax.set_facecolor('black')  # Set the background color
+
+            df = path_function(input[0], input[1], input[2], input[3], input[4])
+
+            def update(frame):
+                ax.clear()
+                ax.set_facecolor('black')
+                x, y = df['x'][:frame], df['y'][:frame]
+                ax.scatter(x, y, color='white')
+                ax.set_title(f'Frame {frame}/{len(df)}')
+
+            ani = FuncAnimation(plt.gcf(), update, frames=len(df), repeat=False)
+            st.pyplot(plt)
 
             #ax.plot(df['x'],df['y'],"r")
             voltage=input[0]
