@@ -3,10 +3,10 @@ from def_file import *
 def user_input_features():
     Voltage=st.slider('Voltage: ',0.0,10.0, 3.0)
     Distance=st.slider('Distance: ',0.01,0.1, 0.05,step=0.01)
-    B_field=st.slider('B_field: ',0.0001,0.01,step=0.0001)
+    B_field=st.slider('10^6*B_field: ',1,10,step=0.1)
     X1=st.slider('x1: ',0.1,1.0,0.2,step=0.01)
     X2=st.slider('x2: ',0.1,1.0,0.2,step=0.01)
-    features=[float(Voltage),float(Distance),float(X1),float(X2),float(B_field)]
+    features=[float(Voltage),float(Distance),float(X1),float(X2),float(B_field/10^6)]
     return features
 
 def load_view():    
