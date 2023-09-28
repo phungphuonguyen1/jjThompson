@@ -117,7 +117,7 @@ def load_view():
             # Display the plot in Streamlit
             st.pyplot(fig)
         with col4:
-            st.write(pd.DataFrame({'data':[E_field,x1,x2,D,voltage]}))
+            #st.write(pd.DataFrame({'data':[E_field,x1,x2,D,voltage]}))
             st.markdown("""
                 |       | Giá trị |
                 | ----------- | ----------- |
