@@ -65,13 +65,13 @@ def load_view():
             fig, ax = plt.subplots()
             ax.set_facecolor('black')  # Set the background color
             x, y = df['x'], df['y']
-            line = ax.plot(x,y)
+            line, = ax.plot(x,y)
             def init(): 
                 line.set_data([], []) 
-                return line 
+                return line, 
             def animate(i):
                 line.set_ydata(np.sin(x + i/10.0))  # update the data
-                return line
+                return line,
             ani = FuncAnimation(fig, animate, init_func = init, 
                                frames = 500, interval = 20, blit = True)
             #st.pyplot(fig)
