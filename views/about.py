@@ -54,7 +54,7 @@ def load_view():
         st.markdown("## Hình vẽ mô phỏng thí nghiệm thực tế")
         st.video("https://youtu.be/fF_0zqYc24k",start_time=2)
 
-    col3,col4=st.columns([2,1]):
+    col3,col4=st.columns([2,1])
     if col1.button("Mô phỏng"):
         with col3:
             #ax.style.use('dark_background')
