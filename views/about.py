@@ -74,7 +74,7 @@ def load_view():
                 return line,
             ani = FuncAnimation(fig, animate, init_func = init, 
                                frames = 500, interval = 20, blit = True)
-            #st.pyplot(fig)
+            st.pyplot(fig)
 
             #ax.plot(df['x'],df['y'],"r")
             voltage=input[0]
