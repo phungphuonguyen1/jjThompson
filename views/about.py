@@ -15,7 +15,6 @@ def user_input_features():
     return features
 
 def load_view():    
-    st.title('Calculation page')
     title_main='''<h1 style="text-align:center; font-weight: bolder;color: #EE9322;text-shadow: 3px 1px blue;">
         Tính toán cho thí nghiệm
     </h1>'''
