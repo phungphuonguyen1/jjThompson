@@ -2,7 +2,6 @@ from openai import Image
 from def_file import *
 
 import streamlit as st
-from langchain.llms import OpenAI
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -114,7 +113,7 @@ with st.expander("Input explaination"):
 
 input = user_input_features()
 
-if st.sidebar.button("Mô phỏng"):
+if st.button("Mô phỏng"):
     #ax.style.use('dark_background')
     df=path_function(input[0],input[1],input[2],input[3],input[4])
     #path
