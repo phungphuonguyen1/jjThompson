@@ -58,6 +58,7 @@ def load_view():
     col3,col4=st.columns([2,1])
     if col1.button("Mô phỏng"):
         with col3:
+            fig, ax = plt.subplots()
             ax = plt.gca()
             ax.set_facecolor('black')  # Set the background color
 
