@@ -52,7 +52,7 @@ def load_view():
         input = user_input_features()
     with col2:
         st.markdown("## Hình vẽ mô phỏng thí nghiệm thực tế")
-        st.video("https://youtu.be/fF_0zqYc24k")
+        st.video('https://youtu.be/fF_0zqYc24k')
 
     col3,col4=st.columns([2,1])
     if col1.button("Mô phỏng"):
