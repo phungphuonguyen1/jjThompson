@@ -68,14 +68,13 @@ def load_view():
             line, = ax.plot([], [], 'bo-')
 
             # Function to update the plot
-            def update_plot(df, interval):
-                for i, row in df.iterrows():
-                    x = row['x']
-                    y = row['y']
-                    line.set_data(x, y)
-                    st.pyplot(plt)
-                    time.sleep(interval)
-            update_plot(df, 0.01)
+            for _, row in df.iterrows():
+                x = row['x']
+                y = row['y']
+                line.set_data(x, y)
+                st.pyplot(plt)
+                time.sleep(0.1)
+            #update_plot(df, 0.01)
             #ax.plot(df['x'],df['y'],"r")
             voltage=input[0]
             E_field=input[0]/input[1]
