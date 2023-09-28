@@ -121,15 +121,15 @@ def load_view():
             st.markdown("""
                 |       | Giá trị |
                 | ----------- | ----------- |
-                | Electric field      | {} |
-                | Magnetic field   | {} |
-                | Voltage | {} |
-                | Distance | {} |
-                | $x_1$ | {} |
-                | $x_2$ | {} |
-                | $v_x$ | {} |
-                | $y_1$ | {}  |
-                | $y_2$ | {} |
+                | **Electric field**      | {} |
+                | **Magnetic field**   | {} |
+                | **Voltage** | {} |
+                | **Distance** | {} |
+                | **$x_1$** | {} |
+                | **$x_2$** | {} |
+                | **$v_x$** | {} |
+                | **$y_1$** | {}  |
+                | **$y_2$** | {} |
             """.format(E_field,B_field,voltage,D,x1,x2,vx,y1,y2))
             st.markdown("**e/m: {} C/kg**".format(ratio))
             st.markdown('==$dfrac{e}{m}$:{}=='.format(ratio))
