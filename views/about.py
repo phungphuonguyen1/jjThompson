@@ -60,7 +60,7 @@ def load_view():
             #ax.style.use('dark_background')
             df=path_function(input[0],input[1],input[2],input[3],input[4])
             #path
-            st.write(df)
+            #st.write(df)
             fig,ax=plt.subplots()
             ax.plot(df['x'],df['y'],"r")
             voltage=input[0]
