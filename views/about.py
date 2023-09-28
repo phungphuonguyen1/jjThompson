@@ -50,7 +50,7 @@ def load_view():
 
     input = user_input_features()
 
-    if st.sidebar.button("Mô phỏng"):
+    if st.button("Mô phỏng"):
         #ax.style.use('dark_background')
         df=path_function(input[0],input[1],input[2],input[3],input[4])
         #path
