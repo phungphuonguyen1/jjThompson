@@ -63,7 +63,7 @@ def load_view():
     if col1.button("Mô phỏng"):
         with col3:
             df = path_function(input[0], input[1], input[2], input[3], input[4])
-            st.pyplot(plt)
+            #st.pyplot(plt)
             fig, ax = plt.subplots()
             ax.plot(df['x'],df['y'],"r")
             voltage=input[0]
