@@ -6,7 +6,7 @@ def user_input_features():
     B_field=st.slider('10^6*B_field: ',1.0,10.0,step=0.1)
     X1=st.slider('x1: ',0.1,1.0,0.2,step=0.01)
     X2=st.slider('x2: ',0.1,1.0,0.2,step=0.01)
-    features=[float(Voltage),float(Distance),float(X1),float(X2),float(B_field/10^6)]
+    features=[float(Voltage),float(Distance),float(X1),float(X2),float(B_field/10**6)]
     return features
 
 def load_view():    
