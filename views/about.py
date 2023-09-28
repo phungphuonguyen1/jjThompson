@@ -1,7 +1,7 @@
 import streamlit as st
 from def_file import *
 def user_input_features():
-    Voltage=st.slider('Voltage: ',0.0,5.0, 0.4)
+    Voltage=st.slider('Voltage: ',0.0,10.0, 3.0)
     Distance=st.slider('Distance: ',0.01,0.1, 0.05,step=0.01)
     B_field=st.slider('B_field: ',0.0001,0.01,step=0.0001)
     X1=st.slider('x1: ',0.1,1.0,0.2,step=0.01)

@@ -39,10 +39,10 @@ def path_function(voltage,distance,x_1,x_2,b):
 
     x_array=[]
     y_array=[]
-    time_step1=t1_final/1000
-    time_step2=t2_final/1000
-    for i in range (0,2000):
-      if (i<1000):
+    time_step1=t1_final/3000
+    time_step2=t2_final/3000
+    for i in range (0,6000):
+      if (i<3000):
         time=i*time_step1
         if (ratio*(x1_inside(vx,time)*b)**2>=V):
           break
@@ -50,7 +50,7 @@ def path_function(voltage,distance,x_1,x_2,b):
           x_array.append(x1_inside(vx,time))
           y_array.append(y1_inside(vx,ratio,E_field,b,time))
       else:
-        time=(i-1000)*time_step2
+        time=(i-3000)*time_step2
         if(y2==0):
           break
         else:
