@@ -58,7 +58,9 @@ def path_function(voltage,distance,x_1,x_2,b):
           x_array.append(x_1+x2_outside(vx,time))
           y_array.append(y1+y2_outside(ratio,time,x_1,b,t1_final,E_field,voltage))
     df = pd.DataFrame({'x': x_array, 'y': y_array})
+    return df
 
+'''
     #path
     plt.plot(x_array,y_array,"r")
 
@@ -97,8 +99,7 @@ def path_function(voltage,distance,x_1,x_2,b):
     # v_0
     plt.show()
     #circle1 = plt.Circle((-0.05, 0), D/10, color='r')
-    #plt.show()
-    return df
+    #plt.show()'''
 
 
 # Tunable input
