@@ -62,7 +62,12 @@ def load_view():
             #path
             #st.write(df)
             fig,ax=plt.subplots()
-            ax.plot(df['x'],df['y'],"r")
+            for x, y in zip(df['x'], df['y']):
+                ax.scatter(x, y)  # Plot the point
+                plt.pause(0.5)      # Pause for 1 second (adjust as needed)
+                plt.draw()        # Update the plot
+
+            #ax.plot(df['x'],df['y'],"r")
             voltage=input[0]
             E_field=input[0]/input[1]
 
@@ -81,7 +86,7 @@ def load_view():
             y2=y2_outside(ratio,t2_final,x1,B_field,t1_final,E_field,voltage)
 
             #note
-            ax.text(-0.1,(input[1]/2)*1.3,'E={} V/m,$x_1$={}m,\n$x_2$={}m,$v_0={}m/s$'.format(E_field,x1,x2,vx),fontsize = 12, bbox = dict(facecolor = 'lightblue', alpha = 0.5))
+            #ax.text(-0.1,(input[1]/2)*1.3,'E={} V/m,$x_1$={}m,\n$x_2$={}m,$v_0={}m/s$'.format(E_field,x1,x2,vx),fontsize = 12, bbox = dict(facecolor = 'lightblue', alpha = 0.5))
             #ax.set_title("Simulation")
             ax.axis("off")
 
@@ -115,6 +120,21 @@ def load_view():
             st.pyplot(fig)
         with col4:
             st.write(pd.DataFrame({'data':[E_field,x1,x2,D,voltage]}))
+            st.markdown("""
+                |       | Giá trị |
+                | ----------- | ----------- |
+                | Electric field      | {} |
+                | Magnetic field   | {} |
+                | Voltage | {} |
+                | Distance | {} |
+                | x1 | {} |
+                | x2 | {} |
+                | $v_x$ | {} |
+                | $y_1$ | {}  |
+                | $y_2$ | {} |
+            """.format(E_field,B_field,voltage,D,x1,x2,vx,y1,y2))
+            st.markdown("==e/m = {} C/kg==".format(ratio))
+
 
 
     
