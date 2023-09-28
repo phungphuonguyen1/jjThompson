@@ -63,7 +63,7 @@ def load_view():
         with col3:
             df = path_function(input[0], input[1], input[2], input[3], input[4])
             fig, ax = plt.subplots()
-            ax.set_facecolor('black')  # Set the background color
+            #ax.set_facecolor('black')  # Set the background color
             x, y = df['x'], df['y']
             line, = ax.plot(x,y)
             def init(): 
