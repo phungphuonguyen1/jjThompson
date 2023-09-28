@@ -3,6 +3,7 @@ from def_file import *
 from matplotlib.animation import FuncAnimation
 import io
 import base64
+import time
 
 def user_input_features():
     Voltage=st.slider('Voltage: ',0.0,10.0, 3.0)
@@ -62,20 +63,19 @@ def load_view():
     if col1.button("Mô phỏng"):
         with col3:
             df = path_function(input[0], input[1], input[2], input[3], input[4])
+            st.pyplot(plt)
             fig, ax = plt.subplots()
-            #ax.set_facecolor('black')  # Set the background color
-            x, y = df['x'], df['y']
-            line, = ax.plot(x,y)
-            def init(): 
-                line.set_data([], []) 
-                return line, 
-            def animate(i):
-                line.set_data(x,y)  # update the data hello
-                return line,
-            ani = FuncAnimation(fig, animate, init_func = init, 
-                               frames = 500, interval = 20, blit = True)
-            st.pyplot(fig)
+            line, = ax.plot([], [], 'bo-')
 
+            # Function to update the plot
+            def update_plot(df, interval):
+                for i, row in df.iterrows():
+                    x = row['x']
+                    y = row['y']
+                    line.set_data(x, y)
+                    st.pyplot(plt)
+                    time.sleep(interval)
+            update_plot(df, 0.01)
             #ax.plot(df['x'],df['y'],"r")
             voltage=input[0]
             E_field=input[0]/input[1]
