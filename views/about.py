@@ -121,7 +121,7 @@ def load_view():
             st.markdown("""
                 |       | Giá trị |
                 | ----------- | ----------- |
-                | **Electric field**    | {}  $\dfrac{V}{m}$|
+                | **Electric field**    | {}  $\dfrac{'V'}{'m'}$|
                 | **Magnetic field**   | {} $Tesla$|
                 | **Voltage** | {} $V$|
                 | **Distance** | {} $m$|
