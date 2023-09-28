@@ -2,7 +2,7 @@
     font-family: 'Trebuchet MS', sans-serif;
     position: fixed;
     width: 100%;
-    background: #353535;
+    background: #11587d;
     z-index: 99999999999999999999;
     left: 0rem;
     top: 0rem;
@@ -22,7 +22,7 @@
 }
 
 .navitem:hover{
-    background-color: #333;
+    background-color: #b49595;
     height: 55px !important;
 }
 
