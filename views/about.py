@@ -65,17 +65,7 @@ def load_view():
             df = path_function(input[0], input[1], input[2], input[3], input[4])
             st.pyplot(plt)
             fig, ax = plt.subplots()
-            line, = ax.plot([], [], 'bo-')
-
-            # Function to update the plot
-            for _, row in df.iterrows():
-                x = row['x']
-                y = row['y']
-                line.set_data(x, y)
-                st.pyplot(plt)
-                time.sleep(0.1)
-            #update_plot(df, 0.01)
-            #ax.plot(df['x'],df['y'],"r")
+            ax.plot(df['x'],df['y'],"r")
             voltage=input[0]
             E_field=input[0]/input[1]
 
