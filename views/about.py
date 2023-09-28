@@ -65,7 +65,7 @@ def load_view():
             fig, ax = plt.subplots()
             ax.set_facecolor('black')  # Set the background color
             x, y = df['x'], df['y']
-            line = ax.scatter(x,y,c="white")
+            line = ax.plot(x,y)
             def init(): 
                 line.set_data([], []) 
                 return line 
