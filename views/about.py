@@ -70,11 +70,11 @@ def load_view():
                 line.set_data([], []) 
                 return line, 
             def animate(i):
-                line.set_ydata(np.sin(x + i/10.0))  # update the data
+                line.set_data(x,y)  # update the data hello
                 return line,
             ani = FuncAnimation(fig, animate, init_func = init, 
                                frames = 500, interval = 20, blit = True)
-            st.pyplot(fig)
+            #st.pyplot(fig)
 
             #ax.plot(df['x'],df['y'],"r")
             voltage=input[0]
