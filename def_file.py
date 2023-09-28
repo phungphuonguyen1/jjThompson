@@ -72,7 +72,7 @@ def path_function(voltage,distance,x_1,x_2,b):
     plt.hlines(y=distance, xmin=0, xmax=x_1, linewidth=4, color='black')
     plt.hlines(y=-distance, xmin=0, xmax=x_1, linewidth=4, color='black')
 
-    plt.vlines(x=x_1+x_2, ymin=-distance, ymax=1.5*(y1_inside(vx,ratio,E_field,b,t1_final)+y2_outside(ratio,t2_final,x_1,b,t1_final,E_field)), linewidth=3, color='black')
+    plt.vlines(x=x_1+x_2, ymin=-distance, ymax=1.5*(y1+y2), linewidth=3, color='black')
     plt.hlines(y=0, xmin=0, xmax=x_1+x_2, linestyles='dotted',color='black')
 
     #distance note
