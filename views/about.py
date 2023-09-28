@@ -64,24 +64,17 @@ def load_view():
             df = path_function(input[0], input[1], input[2], input[3], input[4])
             fig, ax = plt.subplots()
             ax.set_facecolor('black')  # Set the background color
-
-            def update(frame):
-                ax.clear()
-                ax.set_facecolor('black')
-                x, y = df['x'][:frame], df['y'][:frame]
-                ax.scatter(x, y, color='white')
-                ax.set_title(f'Frame {frame}/{len(df)}')
-
-            frames = len(df)
-            for frame in range(frames):
-                update(frame)
-                # Save the figure as a bytes object
-                img_bytes = io.BytesIO()
-                plt.savefig(img_bytes, format="png")
-                img_data = img_bytes.getvalue()
-                st.image(img_data, use_column_width=True)
-
-            st.pyplot(fig)
+            x, y = df['x'], df['y']
+            line, = ax.scatter(x,y,c="white")
+            def init(): 
+                line.set_data([], []) 
+                return line 
+            def animate(i):
+                line.set_ydata(np.sin(x + i/10.0))  # update the data
+                return line
+            ani = FuncAnimation(fig, animate, init_func = init, 
+                               frames = 500, interval = 20, blit = True)
+            #st.pyplot(fig)
 
             #ax.plot(df['x'],df['y'],"r")
             voltage=input[0]
