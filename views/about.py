@@ -73,7 +73,7 @@ def load_view():
         #note
         ax.text(-0.1,(input[1]/2)*1.3,'E={} V/m,$x_1$={}m,\n$x_2$={}m,$v_0={}m/s$'.format(E_field,x1,x2,vx),fontsize = 12, bbox = dict(facecolor = 'lightblue', alpha = 0.5))
         ax.set_title("Simulation")
-        ax.axis("off")
+        #ax.axis("off")
 
         #facilities
         ax.hlines(y=D/2, xmin=0, xmax=x1, linewidth=4, color='black')
