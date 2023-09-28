@@ -39,7 +39,7 @@ def load_view():
         unsafe_allow_html=True
     )
     youtube_url = "https://youtu.be/fF_0zqYc24k"
-
+    st.video('https://youtu.be/fF_0zqYc24k')
     # Embed the video using st.markdown and HTML
     st.markdown(f'<iframe width="560" height="315" src="{youtube_url}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
     # input explaination:
