@@ -58,6 +58,10 @@ def load_view():
     with col2:
         st.markdown("## Hình vẽ mô phỏng thí nghiệm thực tế")
         st.video('https://youtu.be/fF_0zqYc24k',format='video')
+        youtube_url = "https://youtu.be/fF_0zqYc24k"
+
+        # Embed the video using st.markdown and HTML
+        st.markdown(f'<iframe src="{youtube_url}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
 
     col3,col4=st.columns([2,1])
     if col1.button("Mô phỏng"):
