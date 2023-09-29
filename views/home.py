@@ -16,7 +16,7 @@ def load_view():
 
     ses1= """<div id="section1">
         <h2 class="styled-heading">1. J.J. Thomson</h2>
-        #<img src="assets/images/gettyimages-113634985.jpg">
+        <img src="assets/images/gettyimages-113634985.jpg">
         <p class='styled-paragraph'>
                 Joseph John Thomson là nhà Vật lý học người Anh, người đã vinh dự nhận giải Nobel Vật Lý vào năm 1906.<br>Vào năm `897, Thomson đã chỉ ra rằng các tia phát ra từ cathode được tạo bởi
                 các hạt chưa biết mang điện tích âm (ngày nay, chúng ta gọi nó là electron). Với các hạt này, ông đã tính được rằng kích thước của chúng là rất nhỏ so với kích thước 1 nguyên tử và
