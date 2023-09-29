@@ -147,7 +147,7 @@ h2.styled-heading {
 .toc {
     border: 1px solid #ddd;
     border-radius: 20px;
-    background-color: #f5f5f5;
+    background-color: rgba(245, 245, 245, 0.2);
     padding: 10px;
     max-width: 80%;
     }
