@@ -37,11 +37,6 @@ def load_view():
         </style>
         ''',
         unsafe_allow_html=True
-    )
-    youtube_url = "https://youtu.be/fF_0zqYc24k"
-    st.video('https://youtu.be/fF_0zqYc24k')
-    # Embed the video using st.markdown and HTML
-    st.markdown(f'<iframe width="560" height="315" src="{youtube_url}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
     # input explaination:
     ls1="""<ul>
             <li>Interaction polymer-nanoparticle: amplitube</li>
@@ -61,13 +56,8 @@ def load_view():
     with col2:
         image=Image.open("Specific-Charge-Ratio-03.png")
         st.image(image,caption="Hình vẽ mô tả thí nghiệm J.J. Thomson 1897")
-        st.markdown("## Hình vẽ mô phỏng thí nghiệm thực tế")
-        st.video('https://youtu.be/fF_0zqYc24k',format='video')
-        youtube_url = "https://youtu.be/fF_0zqYc24k"
-
-        # Embed the video using st.markdown and HTML
-        st.markdown(f'<iframe src="{youtube_url}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
-
+        hed22='''<h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>'''
+        st.markdown(had22,unsafe_allow_html=True)
     col3,col4=st.columns([2,1])
     if col1.button("Mô phỏng"):
         with col3:
