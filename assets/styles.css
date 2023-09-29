@@ -109,3 +109,38 @@ iframe{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
+
+.styled-heading {
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h1.styled-heading {
+    font-size: 28px;
+    text-transform: uppercase;
+    color:#EE9322;
+    text-shadow: 3px 1px blue;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+h2.styled-heading {
+    font-size: 24px;
+    font-style: italic;
+    color: #F7DC6F;
+}
+
+.styled-button {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.styled-button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
