@@ -16,7 +16,7 @@ def user_input_features():
     return features
 
 def load_view():    
-    title_main='''<h1 style="text-align:center; font-weight: bolder;color: #EE9322;text-shadow: 3px 1px blue;">
+    title_main='''<h1 class="styled-heading">
         Tính toán cho thí nghiệm
     </h1>'''
     st.markdown(title_main,unsafe_allow_html=True)
