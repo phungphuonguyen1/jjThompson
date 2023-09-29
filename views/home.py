@@ -37,6 +37,7 @@ def load_view():
         <div id="section3">
             <h2 class="styled-heading">3. Tài liệu liên quan</h2>
             <a href="https://youtu.be/Rb6MguN0Uj4">Video giải thích thí nghiệm</a>
+            <br>
             <a href="https://youtu.be/_nLESblUAHY">Video mô phỏng thí nghiệm</a>
         </div>      
         """
