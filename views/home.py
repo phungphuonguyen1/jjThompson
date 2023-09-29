@@ -24,8 +24,7 @@ def load_view():
     st.markdown(head2_2,unsafe_allow_html=True)
 
     pa2="""<p style="styled-paragraph">
-            Thí nghiệm này được tiến hành vào năm 1897, .,...
-    
+            Thí nghiệm này được tiến hành vào năm 1897
         </p>"""
     st.markdown(pa2,unsafe_allow_html=True)
     
