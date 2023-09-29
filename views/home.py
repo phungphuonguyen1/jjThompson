@@ -4,8 +4,8 @@ def load_view():
     title_main='<h1 style="text-align:center; font-weight: bolder;color: #EE9322;text-shadow: 3px 1px blue;">GIỚI THIỆU CHUNG</h1>'
     st.markdown(title_main,unsafe_allow_html=True)
     #st.markdown('Thí nghiệm đo $\dfrac{e}{m}$ của J.J. Thomson',unsafe_allow_html=True)
-    head2='<h2 style="text-align:left; font-weight: bolder;color: #F7DC6F;text-shadow: 3px 1px black;">J.J. Thomson</h2>'
-    st.markdown(head2,unsafe_allow_html=True)
+    head2_1='<h2 style="text-align:left; font-weight: bolder;color: #F7DC6F;text-shadow: 3px 1px black;">1. J.J. Thomson</h2>'
+    st.markdown(head2_1,unsafe_allow_html=True)
     image_file= Image.open("assets/images/gettyimages-113634985.jpg")
     st.image(image_file)
     #img=Image.open("/assets/images/gettyimages-113634985.jpg")
@@ -19,3 +19,15 @@ def load_view():
             </p>
         """
     st.markdown(pa1,unsafe_allow_html=True)
+
+    head2_2='<h2 style="styled-heading">2. Thí nghiệm tìm ra tỷ số e/m</h2>'
+    st.markdown(head2_2,unsafe_allow_html=True)
+
+    pa2="""<p style="styled-paragraph">
+            Thí nghiệm này được tiến hành vào năm 1897, .,...
+    
+        </p>"""
+    st.markdown(pa2,unsafe_allow_html=True)
+    
+    
+
