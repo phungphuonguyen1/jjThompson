@@ -6,8 +6,8 @@ def load_view():
     #st.markdown('Thí nghiệm đo $\dfrac{e}{m}$ của J.J. Thomson',unsafe_allow_html=True)
     head2='<h2 style="text-align:left; font-weight: bolder;color: #F7DC6F;text-shadow: 3px 1px black;">J.J. Thomson</h2>'
     st.markdown(head2,unsafe_allow_html=True)
-    image_file= Image.open("assets/images/gettyimages-113634985.jpg")
-    st.image(image_file)
+    #image_file= Image.open("assets/images/gettyimages-113634985.jpg")
+    #st.image(image_file)
     #img=Image.open("/assets/images/gettyimages-113634985.jpg")
     pa1=''' <p class='styled-paragraph'>
                 Joseph John Thomson là nhà Vật lý học người Anh, người đã vinh dự nhận giải Nobel Vật Lý vào năm 1906.<br>Vào năm `897, Thomson đã chỉ ra rằng các tia phát ra từ cathode được tạo bởi
