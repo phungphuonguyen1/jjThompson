@@ -117,7 +117,7 @@ iframe{
 }
 
 h1.styled-heading {
-    font-size: 28px;
+    font-size: 40px;
     text-transform: uppercase;
     color:#EE9322;
     text-shadow: 3px 1px blue;
@@ -126,8 +126,7 @@ h1.styled-heading {
 }
 
 h2.styled-heading {
-    font-size: 24px;
-    font-style: italic;
+    font-size: 30px;
     color: #F7DC6F;
 }
 
