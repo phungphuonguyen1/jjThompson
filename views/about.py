@@ -4,6 +4,7 @@ from matplotlib.animation import FuncAnimation
 import io
 import base64
 import time
+from PIL import Image
 
 def user_input_features():
     Voltage=st.slider('Voltage: ',0.0,10.0, 3.0)
@@ -58,7 +59,8 @@ def load_view():
     with col1: 
         input = user_input_features()
     with col2:
-        st.image("Specific-Charge-Ratio-03.png")
+        image=Image.open("Specific-Charge-Ratio-03.png")
+        st.image(image,caption="Hình vẽ mô tả thí nghiệm J.J. Thomson 1897")
         st.markdown("## Hình vẽ mô phỏng thí nghiệm thực tế")
         st.video('https://youtu.be/fF_0zqYc24k',format='video')
         youtube_url = "https://youtu.be/fF_0zqYc24k"
