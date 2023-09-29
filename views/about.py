@@ -56,7 +56,7 @@ def load_view():
     with col2:
         image=Image.open("Specific-Charge-Ratio-03.png")
         st.image(image,caption="Hình vẽ mô tả thí nghiệm J.J. Thomson 1897")
-        hed22='''<h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>'''
+        hed22='<h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>'
         st.markdown(hed22,unsafe_allow_html=True)
     col3,col4=st.columns([2,1])
     if col1.button("Mô phỏng"):
