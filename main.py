@@ -7,6 +7,19 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 utl.inject_custom_css()
 utl.navbar_component()
 
+# Config function
+st.set_page_config(page_title='J.J.Thomson',page_icon="🤘")
+
+# hide main menu and footer
+hide_menu_style= """
+    <style>
+    MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_menu_style,unsafe_allow_html=True)
+
+
 def navigation():
     route = utl.get_current_route()
     if route == "home":
