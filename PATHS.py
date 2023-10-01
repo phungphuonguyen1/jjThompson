@@ -1,7 +1,7 @@
 NAVBAR_PATHS = {
     'Trang chủ':'home',
-    'Tính toán': 'about',
-    'Liên hệ': 'analysis'
+    'Tính toán': 'calculator',
+    'Liên hệ': 'about_me'
 }
 
 SETTINGS = {
