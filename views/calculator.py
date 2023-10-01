@@ -59,7 +59,7 @@ def load_view():
         st.image(image,caption="Hình vẽ mô tả thí nghiệm J.J. Thomson 1897")'''
         m= """ <div class="containter-author.image">
                     <h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>
-                    <img src="Specific-Charge-Ratio-03.png">
+                    <img src="https://thefactfactor.com/wp-content/uploads/2019/11/Specific-Charge-Ratio-03.png">
                 </div>
             """
         st.markdown(m,unsafe_allow_html=True)
