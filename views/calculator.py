@@ -112,6 +112,12 @@ def load_view():
             ax.plot((-0.1,-0.1),(D/2,D/2), 'gray', marker='^',) # upper arrowhead
             ax.text(-0.15,-D/10,"D={}".format(D),rotation=90)
 
+            #y2
+            ax.plot((x1+x2+0.1,x1+x2+0.1),(0,y2), 'gray',) # arrow line
+            ax.plot((x1+x2+0.1,x1+x2+0.1),(0,0), 'gray', marker='v',) # lower arrowhead
+            ax.plot((x1+x2+0.1,x1+x2+0.1),(y2,y2), 'gray', marker='^',) # upper arrowhead
+            ax.text(x1+x2+0.15,y2/6,"$y_2$={}".format(y2),rotation=90)
+            
             # Display the plot in Streamlit
             st.pyplot(fig)
         with col4:
