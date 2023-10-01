@@ -55,7 +55,6 @@ def load_view():
     ses3="""
         <div id="section3">
             <h2 class="styled-heading">3. Tài liệu liên quan</h2>
-            <iframe type="text/html" width="75%" height="315" src="https://youtu.be/Rb6MguN0Uj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <a href="https://youtu.be/Rb6MguN0Uj4">Video giải thích thí nghiệm</a>
             <br>
             <a href="https://youtu.be/_nLESblUAHY">Video mô phỏng thí nghiệm</a>
