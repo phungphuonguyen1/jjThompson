@@ -50,13 +50,13 @@ def load_view():
     with st.expander("Input explaination"):
         st.markdown(ls1,unsafe_allow_html=True)
 
-    col1,col2= st.columns([1,2])
+    col1,col2= st.columns([1,1])
     with col1: 
         input = user_input_features()
     with col2:
         image=Image.open("Specific-Charge-Ratio-03.png")
-        st.image(image,caption="Hình vẽ mô tả thí nghiệm J.J. Thomson 1897")
         hed22='<h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>'
+        st.image(image,caption="Hình vẽ mô tả thí nghiệm J.J. Thomson 1897")
         st.markdown(hed22,unsafe_allow_html=True)
     col3,col4=st.columns([2,1])
     if col1.button("Mô phỏng"):
@@ -124,11 +124,11 @@ def load_view():
                 | **Magnetic field**   | {} T|
                 | **Voltage** | {} V|
                 | **Distance** | {} m|
-                | **$x_1$**| {} m|
-                | **$x_2$** | {} m|
-                | **$v_x$** | {} m/s|
-                | **$y_1$** | {}  m|
-                | **$y_2$** | {} m|
+                | **$l_1$**| {} m|
+                | **$l_2$** | {} m|
+                | **$v_x$** | {:.3f} m/s|
+                | **$y_1f$** | {}  m|
+                | **$y_2f$** | {} m|
             """.format(E_field,B_field,voltage,D,x1,x2,vx,y1,y2))
             #st.markdown("**e/m: {} C/kg**".format(ratio))
             st.markdown("<br>",unsafe_allow_html=True)
