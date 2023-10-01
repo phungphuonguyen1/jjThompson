@@ -1,6 +1,6 @@
 import streamlit as st
 import utils as utl
-from views import home,about,analysis,options,configuration
+from views import home,about_me,calculator,options,configuration
 
 st.set_page_config(layout="wide", page_title='JJ Thomson')
 st.set_option('deprecation.showPyplotGlobalUse', False)
@@ -25,9 +25,9 @@ def navigation():
     if route == "home":
         home.load_view()
     elif route == "about":
-        about.load_view()
+        calculator.load_view()
     elif route == "analysis":
-        analysis.load_view()
+        about_me.load_view()
     elif route == "options":
         options.load_view()
     elif route == "configuration":
