@@ -23,12 +23,13 @@ def load_view():
          </div>   
         <div class="text">
             <p class='styled-paragraph'>
-                Joseph John Thomson là nhà Vật lý học người Anh, người đã vinh dự nhận giải Nobel Vật Lý vào năm 1906.<br>Vào năm `897, Thomson đã chỉ ra rằng các tia phát ra từ cathode được tạo bởi
-                các hạt chưa biết mang điện tích âm (ngày nay, chúng ta gọi nó là electron). Với các hạt này, ông đã tính được rằng kích thước của chúng là rất nhỏ so với kích thước 1 nguyên tử và
-                tỷ lệ giữa điện tích và khối lượng của hạt này là rất lớn.<br>Thomson cũng được biết tới là người đầu tiên đưa ra bằng chứng về các đồng vị của một nguyên tố bền (không phóng xạ) 
-                vào năm 1913. Các thí nghiệm của ông nhằm xác định bản chất của các hạt tích điện dương, cùng với nhà Vật lý học Francis William Aston, là ứng dụng đầu tiên của phép đo khối phổ và
-                dẫn tới sự phát triển của máy quang phổ khối.<br>Thomson đã được trao giải Nobel Vật lý vào năm 1906 với công trình về sự dẫn điện trong chất khí. Thomson cũng là một giáo viên,
-                có 9 người trong số các học sinh, đồng nghiệp và cấp dưới (bao gồm cả con trai ông) cũng giành được giải Nobel.</p>
+                <p>Joseph John Thomson là nhà Vật lý học người Anh, người đã vinh dự nhận giải Nobel Vật Lý vào năm 1906.</p>
+                <p>Vào năm `897, Thomson đã chỉ ra rằng các tia phát ra từ cathode được tạo bởi các hạt chưa biết mang điện tích âm (ngày nay, chúng ta gọi nó là electron). Với các hạt này, ông đã tính được rằng kích thước của chúng là rất nhỏ so với kích thước 1 nguyên tử và
+                tỷ lệ giữa điện tích và khối lượng của hạt này là rất lớn.</p>
+                </p>Thomson cũng được biết tới là người đầu tiên đưa ra bằng chứng về các đồng vị của một nguyên tố bền (không phóng xạ) vào năm 1913. Các thí nghiệm của ông nhằm xác định bản chất của các hạt tích điện dương, cùng với nhà Vật lý học Francis William Aston, là ứng dụng đầu tiên của phép đo khối phổ và
+                dẫn tới sự phát triển của máy quang phổ khối.</p>
+                <p>Thomson đã được trao giải Nobel Vật lý vào năm 1906 với công trình về sự dẫn điện trong chất khí. Thomson cũng là một giáo viên, có 9 người trong số các học sinh, đồng nghiệp và cấp dưới (bao gồm cả con trai ông) cũng giành được giải Nobel.</p>
+                </p>
         </div>
         </div>
     </div>"""
