@@ -127,8 +127,8 @@ def load_view():
                 | **$l_1$**| {} m|
                 | **$l_2$** | {} m|
                 | **$v_x$** | {:.1f} m/s|
-                | **$y_(1f)$** | {:.6f}  m|
-                | **$y_(2f)$** | {:.6f} m|
+                | **$y_1$** | {:.6f}  m|
+                | **$y_2$** | {:.6f} m|
             """.format(E_field,B_field,voltage,D,x1,x2,vx,y1,y2))
             #st.markdown("**e/m: {} C/kg**".format(ratio))
             st.markdown("<br>",unsafe_allow_html=True)
