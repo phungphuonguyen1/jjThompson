@@ -15,8 +15,9 @@ def load_view():
     </div>"""
     st.markdown(menu,unsafe_allow_html=True)
 
-    ses1= """<div id="section1" class="container-author">
+    ses1= """<div id="section1">
         <h2 class="styled-heading">1. J.J. Thomson</h2>
+        <div class="container-author">
         <div class="image">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/J.J_Thomson.jpg/250px-J.J_Thomson.jpg">
          </div>   
@@ -28,6 +29,7 @@ def load_view():
                 vào năm 1913. Các thí nghiệm của ông nhằm xác định bản chất của các hạt tích điện dương, cùng với nhà Vật lý học Francis William Aston, là ứng dụng đầu tiên của phép đo khối phổ và
                 dẫn tới sự phát triển của máy quang phổ khối.<br>Thomson đã được trao giải Nobel Vật lý vào năm 1906 với công trình về sự dẫn điện trong chất khí. Thomson cũng là một giáo viên,
                 có 9 người trong số các học sinh, đồng nghiệp và cấp dưới (bao gồm cả con trai ông) cũng giành được giải Nobel.</p>
+        </div>
         </div>
     </div>"""
     st.markdown(ses1,unsafe_allow_html=True)
