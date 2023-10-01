@@ -50,17 +50,6 @@ def load_view():
         st.markdown(ls1,unsafe_allow_html=True)
 
     col1,col2= st.columns([1,1])
-    col12= """<div class="container-author">
-            <div class="text">
-                input = user_input_features()
-            </div>
-            <div class="image">
-            <h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>
-            <img src="Specific-Charge-Ratio-03.png">
-            </div>
-    </div>"""
-    st.markdown(col12,unsafe_allow_html=True)
-    
     with col1: 
         input = user_input_features()
     with col2:
@@ -71,6 +60,7 @@ def load_view():
         m= """ <div class="containter-author.image">
                     <h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>
                     <img src="Specific-Charge-Ratio-03.png">
+                </div>
             """
         st.markdown(m,unsafe_allow_html=True)
         
