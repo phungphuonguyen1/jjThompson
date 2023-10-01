@@ -100,25 +100,28 @@ iframe{
 
 .styled-paragraph {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     color: #333;
-    background-color: #f7f7f7;
+    /*background-color: #f7f7f7;*/
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    /*border: 1px solid #ccc;*/
+    /*border-radius: 5px;*/
+    */box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);*/
+    text-align: left;
+    text-indent: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 
 .styled-heading {
     font-family: Arial, sans-serif;
     font-weight: bolder;
     text-transform: uppercase;
+    text-align: center;
 }
 
 h1.styled-heading {
     font-size: 40px;
-    text-align: center;
     color:#EE9322;
     text-shadow: 3px 1px blue;
     border-bottom: 2px solid #333;
@@ -149,7 +152,7 @@ h2.styled-heading {
     border-radius: 20px;
     background-color: rgba(245, 245, 245, 0.2);
     padding: 10px;
-    max-width: 80%;
+    max-width: 100%;
     }
 
         /* Style the table of contents links */
