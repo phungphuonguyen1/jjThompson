@@ -55,7 +55,7 @@ def load_view():
     ses3="""
         <div id="section3">
             <h2 class="styled-heading">3. Tài liệu liên quan</h2>
-            <iframe width="420" height="315" src="https://youtu.be/Rb6MguN0Uj4?si=ff9zAYFd255DmqJd"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Rb6MguN0Uj4?si=9x8h9nd11C6xLWjO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <a href="https://youtu.be/Rb6MguN0Uj4">Video giải thích thí nghiệm</a>
             <br>
             <a href="https://youtu.be/_nLESblUAHY">Video mô phỏng thí nghiệm</a>
