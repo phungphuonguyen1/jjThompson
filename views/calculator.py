@@ -39,15 +39,14 @@ def load_view():
         unsafe_allow_html=True)
     # input explaination:
     ls1="""<ul>
-            <li>Interaction polymer-nanoparticle: amplitube</li>
-            <li>Interaction nanoparticle-nanoparticle: amplitube</li>
-            <li>Diameter of nanoparticle: size of nanoparticle (sperical, in nanometer)</li>
-            <li>Phi: represented by mass of nanoparticle per total volume</li>
-            <li>Length of polymer chain: in nanometer</li>
-            <li>Distance: range should be small (less than length of polymer chain)</li>
+            <li>V: Điện thế của bản tụ (V)</li>
+            <li>D: Khoảng cách giữa 2 bản tụ (m)</li>
+            <li>B_field: Độ lớn cường độ điện trường (T)</li>
+            <li>l1: Chiều dài bản tụ (m)</li>
+            <li>l2: Khoảng cách từ bản tụ đến màn chắn (m)</li>
         </ul>"""
             
-    with st.expander("Input explaination"):
+    with st.expander("Giải thích các thông số đầu vào"):
         st.markdown(ls1,unsafe_allow_html=True)
 
     col1,col2= st.columns([1,1])
