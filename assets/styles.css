@@ -176,7 +176,7 @@ h2.styled-heading {
 
         .image {
             flex: 1; /* Ảnh sẽ chiếm một phần tỷ lệ cố định của container */
-            text-align: right; /* Căn phải ảnh trong phần container */
+            text-align: center; /* Căn giữa ảnh trong phần container */
         }
 
         .text {
