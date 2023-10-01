@@ -21,9 +21,9 @@ def navigation():
     route = utl.get_current_route()
     if route == "home":
         home.load_view()
-    elif route == "about":
+    elif route == "calculator":
         calculator.load_view()
-    elif route == "analysis":
+    elif route == "about_me":
         about_me.load_view()
     elif route == "options":
         options.load_view()
