@@ -55,7 +55,7 @@ def load_view():
                 input = user_input_features()
             </div>
             <div class="image">
-            <h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>'
+            <h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>
             <img src="Specific-Charge-Ratio-03.png">
             </div>
     </div>"""
@@ -64,10 +64,16 @@ def load_view():
     with col1: 
         input = user_input_features()
     with col2:
-        hed22='<h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>'
+        '''hed22='<h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>'
         st.markdown(hed22,unsafe_allow_html=True)
         image=Image.open("Specific-Charge-Ratio-03.png")
-        st.image(image,caption="Hình vẽ mô tả thí nghiệm J.J. Thomson 1897")
+        st.image(image,caption="Hình vẽ mô tả thí nghiệm J.J. Thomson 1897")'''
+        m= """ <div class="containter-author.image">
+                    <h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>
+                    <img src="Specific-Charge-Ratio-03.png">
+            """
+        st.markdown(m,unsafe_allow_html=True)
+        
     col3,col4=st.columns([2,1])
     if col1.button("Mô phỏng"):
         with col3:
