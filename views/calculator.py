@@ -113,10 +113,10 @@ def load_view():
             ax.text(-0.15,-D/10,"D={}".format(D),rotation=90)
 
             #y2
-            ax.plot((x1+x2+0.05,x1+x2+0.05),(0,y2), 'gray',) # arrow line
+            ax.plot((x1+x2+0.05,x1+x2+0.05),(0,y1+y2), 'gray',) # arrow line
             ax.plot((x1+x2+0.05,x1+x2+0.05),(0,0), 'gray', marker='v',) # lower arrowhead
-            ax.plot((x1+x2+0.05,x1+x2+0.05),(y2,y2), 'gray', marker='^',) # upper arrowhead
-            ax.text(x1+x2+0.075,y2/6,"$y_1 + y_2$={:.6f}".format(y1+y2),rotation=90)
+            ax.plot((x1+x2+0.05,x1+x2+0.05),(y2+y1,y2+y1), 'gray', marker='^',) # upper arrowhead
+            ax.text(x1+x2+0.075,(y1+y2)/6,"$y_1 + y_2$={:.6f}".format(y1+y2),rotation=90)
             
             # Display the plot in Streamlit
             st.pyplot(fig)
