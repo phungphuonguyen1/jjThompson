@@ -182,3 +182,7 @@ h2.styled-heading {
         .text {
             flex: 2; /* Văn bản sẽ chiếm một phần tỷ lệ cố định của container */
         }
+.container-single {
+    align-items: center;
+    text-align: center;
+}
