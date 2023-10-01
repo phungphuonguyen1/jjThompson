@@ -62,6 +62,7 @@ def load_view():
         </div>      
         """
     st.markdown(ses3,unsafe_allow_html=True)
+    st.video("https://youtu.be/Rb6MguN0Uj4")
 
     
 
