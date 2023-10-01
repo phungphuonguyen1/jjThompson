@@ -58,7 +58,7 @@ def load_view():
         image=Image.open("Specific-Charge-Ratio-03.png")
         st.image(image,caption="Hình vẽ mô tả thí nghiệm J.J. Thomson 1897")'''
         m= """ <div class="container-author.image">
-                    <h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>
+                    #<h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>
                     <img src="https://thefactfactor.com/wp-content/uploads/2019/11/Specific-Charge-Ratio-03.png">
                 </div>
             """
