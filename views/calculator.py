@@ -49,7 +49,8 @@ def load_view():
         </ul>
     """
     st.write("Giải thích các thông số đầu vào:")     
-    st.markdown(ls1,unsafe_allow_html=True)
+    #st.markdown(ls1,unsafe_allow_html=True)
+    st.latex(ls1)
 
     col1,col2= st.columns([1,1])
     with col1: 
