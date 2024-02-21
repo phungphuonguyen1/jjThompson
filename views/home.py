@@ -4,15 +4,6 @@ def load_view():
     title_main='<h1 style="text-align:center; font-weight: bolder;color: #246BA6 ;text-shadow: 3px 1px #83C7FF ;">GIỚI THIỆU CHUNG</h1>'
     st.markdown(title_main,unsafe_allow_html=True)
 
-    #table of content
-    menu="""<div class="toc">
-        <h2 class='styled-heading'>Table of Contents</h2>
-        <ul>
-            <li><a href="#section1">1. J.J. Thomson</a></li>
-            <li><a href="#section2">2. Thí nghiệm tìm ra tỷ số e/m</a></li>
-            <li><a href="#section3">3. Tài liệu tham khảo</a></li>
-        </ul>
-    </div>"""
     st.markdown(menu,unsafe_allow_html=True)
 
     ses1= """<div id="section1">
