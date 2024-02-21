@@ -11,8 +11,8 @@ def user_input_features():
     Distance=st.slider('D: ',0.01,0.1, 0.05,step=0.01)
     #B_field=st.slider('10^5*B_field: ',0.5,10.0,step=0.1)
     B_field = st.slider(r'$10^5 \cdot B_{\text{field}}$: ', 0.5, 10.0, step=0.1)
-    X1=st.slider('l1: ',0.1,1.0,0.2,step=0.01)
-    X2=st.slider('l2: ',0.1,1.0,0.2,step=0.01)
+    X1=st.slider(r'$l_1$: ',0.1,1.0,0.2,step=0.01)
+    X2=st.slider(r'$l_2$: ',0.1,1.0,0.2,step=0.01)
     features=[float(Voltage),float(Distance),float(X1),float(X2),float(B_field/10**5)]
     return features
 
