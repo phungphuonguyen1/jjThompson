@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 def load_view():
-    title_main='<h1 style="text-align:center; font-weight: bolder;color: #3A8DD2 ;text-shadow: 3px 1px #83C7FF ;">GIỚI THIỆU CHUNG</h1>'
+    title_main='<h1 style="text-align:center; font-weight: bolder;color: #3593E1 ;text-shadow: 3px 1px #83C7FF ;">GIỚI THIỆU CHUNG</h1>'
     st.markdown(title_main,unsafe_allow_html=True)
 
     #table of content
