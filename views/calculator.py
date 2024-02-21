@@ -41,7 +41,6 @@ def load_view():
     # input explaination:
     ls1=  r"""
     \begin{itemize}
-    \begin{itemize}
     <ul>
             <li>V: Điện thế của bản tụ (V)</li>
             <li>D: Khoảng cách giữa 2 bản tụ (m)</li>
