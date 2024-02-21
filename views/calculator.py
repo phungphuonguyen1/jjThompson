@@ -19,7 +19,6 @@ def load_view():
     title_main='''<h1 class="styled-heading">
         Tính toán cho thí nghiệm
     </h1>'''
-    st.write("Giải thích các thông số đầu vào:")
     st.markdown(title_main,unsafe_allow_html=True)
     
     st.markdown(
@@ -46,7 +45,7 @@ def load_view():
             <li>l1: Chiều dài bản tụ (m)</li>
             <li>l2: Khoảng cách từ bản tụ đến màn chắn (m)</li>
         </ul>"""
-            
+    st.write("Giải thích các thông số đầu vào:")     
     st.markdown(ls1,unsafe_allow_html=True)
 
     col1,col2= st.columns([1,1])
