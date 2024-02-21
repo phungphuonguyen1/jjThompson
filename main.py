@@ -1,6 +1,7 @@
 import streamlit as st
 import utils as utl
 from views import home,about_me,calculator,options,configuration
+from PATHS import NAVBAR_PATHS, SETTINGS
 # Add CSS styles for the navigation bar
 st.markdown(
     """
