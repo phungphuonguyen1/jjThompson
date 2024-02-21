@@ -1,4 +1,5 @@
 import streamlit as st
     
 def load_view():
-    st.title('Document page')
+    st.title('Thông tin nhóm thực hiện')
+    
