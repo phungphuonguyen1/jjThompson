@@ -51,7 +51,7 @@ def load_view():
     """
     st.write("Giải thích các thông số đầu vào:")     
     st.markdown(ls1,unsafe_allow_html=True)
-    col1,col2= st.columns([1,1])
+    col1,col2= st.columns([1,2])
     with col1: 
         input = user_input_features()
     with col2:
