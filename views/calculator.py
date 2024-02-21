@@ -54,7 +54,7 @@ def load_view():
     col1,col2= st.columns([1,2])
     with col1: 
         input = user_input_features()
-        with col2:
+    with col2:
         '''hed22='<h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>'
         st.markdown(hed22,unsafe_allow_html=True)
         image=Image.open("Specific-Charge-Ratio-03.png")
