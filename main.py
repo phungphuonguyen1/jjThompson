@@ -2,6 +2,11 @@ import streamlit as st
 import utils as utl
 from views import home,about_me,calculator,options,configuration
 
+st.set_page_config(layout="wide", page_title='JJ Thomson',page_icon='🤓')
+st.set_option('deprecation.showPyplotGlobalUse', False)
+utl.inject_custom_css()
+utl.navbar_component()
+
 # hide main menu and footer
 hide_menu_style= """
     <style>
