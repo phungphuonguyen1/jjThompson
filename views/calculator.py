@@ -46,8 +46,7 @@ def load_view():
             <li>l2: Khoảng cách từ bản tụ đến màn chắn (m)</li>
         </ul>"""
             
-    #with st.expander("Giải thích các thông số đầu vào"):
-        st.markdown(ls1,unsafe_allow_html=True)
+    st.markdown(ls1,unsafe_allow_html=True)
 
     col1,col2= st.columns([1,1])
     with col1: 
