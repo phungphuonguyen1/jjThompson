@@ -44,8 +44,8 @@ def load_view():
             <li>V: Điện thế của bản tụ (V)</li>
             <li>D: Khoảng cách giữa 2 bản tụ (m)</li>
             <li>B_field: Độ lớn cường độ điện trường (T)</li>
-            <li> r'$l_1$': Chiều dài bản tụ (m)</li>
-            <li> r'$l_2$': Khoảng cách từ bản tụ đến màn chắn (m)</li>
+            <li> $l_1$: Chiều dài bản tụ (m)</li>
+            <li> $l_2$: Khoảng cách từ bản tụ đến màn chắn (m)</li>
     \end{itemize}
         </ul>"""
     st.write("Giải thích các thông số đầu vào:")     
