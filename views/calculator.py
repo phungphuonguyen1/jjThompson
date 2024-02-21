@@ -19,6 +19,7 @@ def load_view():
     title_main='''<h1 class="styled-heading">
         Tính toán cho thí nghiệm
     </h1>'''
+    st.write("Giải thích các thông số đầu vào:")
     st.markdown(title_main,unsafe_allow_html=True)
     
     st.markdown(
