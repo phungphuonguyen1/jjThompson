@@ -4,7 +4,6 @@ def load_view():
     title_main='<h1 style="text-align:center; font-weight: bolder;color: #246BA6 ;text-shadow: 3px 1px #83C7FF ;">GIỚI THIỆU CHUNG</h1>'
     st.markdown(title_main,unsafe_allow_html=True)
 
-    st.markdown(menu,unsafe_allow_html=True)
 
     ses1= """<div id="section1">
         <h2 class="styled-heading">1. J.J. Thomson</h2>
