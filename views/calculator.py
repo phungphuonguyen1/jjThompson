@@ -40,7 +40,6 @@ def load_view():
         unsafe_allow_html=True)
     # input explaination:
     ls1=  r"""
-    \begin{itemize}
     <ul>
             <li>V: Điện thế của bản tụ (V)</li>
             <li>D: Khoảng cách giữa 2 bản tụ (m)</li>
@@ -48,7 +47,6 @@ def load_view():
             <li> $l_1$: Chiều dài bản tụ (m)</li>
             <li> $l_2$: Khoảng cách từ bản tụ đến màn chắn (m)</li>
         </ul>
-    \end{itemize}
     """
     st.write("Giải thích các thông số đầu vào:")     
     st.markdown(ls1,unsafe_allow_html=True)
