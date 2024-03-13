@@ -98,7 +98,7 @@ def load_view():
             #facilities
             ax.hlines(y=D/2, xmin=0, xmax=x1, linewidth=4, color='black')
             ax.hlines(y=-D/2, xmin=0, xmax=x1, linewidth=4, color='black')
-
+            ax.text(x1/2,(D+0.1)/2,"+")
             ax.vlines(x=x1+x2, ymin=-D/2, ymax=1.5*max((y1+y2),D/2), linewidth=3, color='black')
             ax.hlines(y=0, xmin=0, xmax=x1+x2, linestyles='dotted',color='black')
 
