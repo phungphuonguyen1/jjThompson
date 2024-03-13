@@ -137,7 +137,7 @@ def load_view():
                 | **Điện trường**    | {} V/m|
                 | **Từ trường**   | {} T|
                 | **Điện thế** | {} V|
-                | **Khoảng cách giữa 2 bản tụ** | {} m|
+                | **D** | {} m|
                 | **$l_1$**| {} m|
                 | **$l_2$** | {} m|
                 | **$v_x$** | {:.1f} m/s|
