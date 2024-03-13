@@ -63,7 +63,8 @@ def load_view():
             """
         st.markdown(m,unsafe_allow_html=True)
         '''hed23='<h2 class="styled-heading">Cơ sở lý thuyết cho tính toán</h2>'
-        st.markdown(hed23,unsafe_allow_html=True)"""
+        st.markdown(hed23,unsafe_allow_html=True)'''
+
         m2= """
         <a href="https://drive.google.com/file/d/17eAjIquLkHxjOCgGHPe77aZjhoZh6F6r/view?usp=sharing">Bản Tiếng Anh</a>
         <br>
