@@ -17,11 +17,8 @@ def user_input_features():
     return features
 
 def load_view():    
-    title_main='''<h1 class="text-align:center; font-weight: bolder;color: #246BA6 ;text-shadow: 3px 1px #83C7FF ;">
-        Chương trình mô phỏng thí nghiệm đo tỷ sổ khối lượng/ điện tích của J. J. Thomson
-    </h1>'''
+    title_main='<h1 style="text-align:center; font-weight: bolder;color: #246BA6 ;text-shadow: 3px 1px #83C7FF ;">Chương trình mô phỏng thí nghiệm đo tỷ sổ khối lượng/ điện tích của J. J. Thomson</h1>'
     st.markdown(title_main,unsafe_allow_html=True)
-    
     st.markdown(
         '''
         <style>
