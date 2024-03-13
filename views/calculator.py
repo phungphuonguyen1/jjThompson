@@ -18,7 +18,7 @@ def user_input_features():
 
 def load_view():    
     title_main='''<h1 class="styled-heading">
-        Chương trình mô phỏng thí nghiệm đo tỷ sổ khối lượng/ điện tích của J. J. Thompson
+        Chương trình mô phỏng thí nghiệm đo tỷ sổ khối lượng/ điện tích của J. J. Thomson
     </h1>'''
     st.markdown(title_main,unsafe_allow_html=True)
     
