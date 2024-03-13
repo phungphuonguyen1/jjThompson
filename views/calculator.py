@@ -134,10 +134,10 @@ def load_view():
             st.markdown("""
                 |       | Giá trị |
                 | ----------- | ----------- |
-                | **Electric field**    | {} V/m|
-                | **Magnetic field**   | {} T|
-                | **Voltage** | {} V|
-                | **Distance** | {} m|
+                | **Điện trường**    | {} V/m|
+                | **Từ trường**   | {} T|
+                | **Điện thế** | {} V|
+                | **Khoảng cách giữa 2 bản tụ** | {} m|
                 | **$l_1$**| {} m|
                 | **$l_2$** | {} m|
                 | **$v_x$** | {:.1f} m/s|
