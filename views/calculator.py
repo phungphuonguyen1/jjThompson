@@ -56,16 +56,14 @@ def load_view():
         m= """ <div class="container-single">
                     <h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>
                     <img src="https://thefactfactor.com/wp-content/uploads/2019/11/Specific-Charge-Ratio-03.png">
+                    <h2 class="styled-heading">Cơ sở lý thuyết cho tính toán</h2>
+                    <a href="https://drive.google.com/file/d/17eAjIquLkHxjOCgGHPe77aZjhoZh6F6r/view?usp=sharing">Bản Tiếng Anh</a>
+                    <br>
+                    <a href="https://drive.google.com/file/d/1mtRizC2kHO4K26WUaQpjHwMuLQPqBCCs/view?usp=sharing">Bản Tiếng Việt</a>
                 </div>
+                
             """
         st.markdown(m,unsafe_allow_html=True)
-
-        m2= """
-        <a href="https://drive.google.com/file/d/17eAjIquLkHxjOCgGHPe77aZjhoZh6F6r/view?usp=sharing">Bản Tiếng Anh</a>
-        <br>
-        <a href="https://drive.google.com/file/d/1mtRizC2kHO4K26WUaQpjHwMuLQPqBCCs/view?usp=sharing">Bản Tiếng Việt</a>
-        """
-        st.markdown(m2,unsafe_allow_html=True)
         
     col3,col4=st.columns([2,1])
     if col1.button("Mô phỏng"):
