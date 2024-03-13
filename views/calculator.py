@@ -52,18 +52,13 @@ def load_view():
     with col1: 
         input = user_input_features()
     with col2:
-        '''hed22='<h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>'
-        st.markdown(hed22,unsafe_allow_html=True)
-        image=Image.open("Specific-Charge-Ratio-03.png")
-        st.image(image,caption="Hình vẽ mô tả thí nghiệm J.J. Thomson 1897")'''
+
         m= """ <div class="container-single">
                     <h2 class="styled-heading">Hình vẽ mô phỏng thí nghiệm thực tế</h2>
                     <img src="https://thefactfactor.com/wp-content/uploads/2019/11/Specific-Charge-Ratio-03.png">
                 </div>
             """
         st.markdown(m,unsafe_allow_html=True)
-        '''hed23='<h2 class="styled-heading">Cơ sở lý thuyết cho tính toán</h2>'
-        st.markdown(hed23,unsafe_allow_html=True)'''
 
         m2= """
         <a href="https://drive.google.com/file/d/17eAjIquLkHxjOCgGHPe77aZjhoZh6F6r/view?usp=sharing">Bản Tiếng Anh</a>
